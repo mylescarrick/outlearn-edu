@@ -1,0 +1,28 @@
+export default {
+  plugins: [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+  ],
+  arrowParens: "always",
+  trailingComma: "es5",
+  semi: false,
+  tabWidth: 2,
+  useTabs: false,
+  importOrder: [
+    "^@/",
+    "^[a-z]",
+    "^[A-Z]",
+    "^[0-9]",
+    "^../",
+    "^./",
+    "^~/auth",
+    "^~/external",
+    "^~/data",
+    "^~/lib",
+    "^~/hooks",
+    "^~/components/ui",
+    "^~/components",
+  ],
+  tailwindStylesheet: "./app/app.css",
+  tailwindFunctions: ["cva", "cn", "clsx"],
+}

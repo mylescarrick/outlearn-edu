@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "1password.op-vscode",
+    "vitest.explorer",
+    "github.copilot",
+    "github.copilot-chat",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "rangav.vscode-thunder-client",
+    "github.vscode-github-actions"
+  ]
+}
