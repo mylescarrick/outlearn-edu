@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
+import type { Config } from "tailwindcss"
+import defaultTheme from "tailwindcss/defaultTheme"
 
 export default {
   darkMode: ["class"],
@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["DM Sans", ...defaultTheme.fontFamily.sans],
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
         serif: ["DM Serif Display", ...defaultTheme.fontFamily.serif],
-        brand: ["DM Serif Display", ...defaultTheme.fontFamily.serif],
+        brand: ["Roboto Serif", ...defaultTheme.fontFamily.serif],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -19,6 +19,7 @@ export default {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        blank: "hsl(var(--blank))",
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -61,4 +62,4 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+} satisfies Config

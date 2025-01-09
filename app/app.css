@@ -4,7 +4,7 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-background text-foreground;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
@@ -15,6 +15,7 @@ body {
   :root {
     --background: 220 16% 96%;
     --foreground: 220 16% 30%;
+    --blank: 0 0% 100%;
     --card: 220 16% 98%;
     --card-foreground: 220 16% 20%;
     --popover: 220 16% 98%;
@@ -42,6 +43,7 @@ body {
   .dark {
     --background: 220 16% 16%;
     --foreground: 220 16% 90%;
+    --blank: 0 0% 0%;
     --card: 220 16% 18%;
     --card-foreground: 220 16% 90%;
     --popover: 220 16% 18%;

@@ -1,7 +1,7 @@
 {
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "eslint.runtime": "node",
+  "eslint.runtime": "bun",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.quickSuggestions": {
     "strings": "on"

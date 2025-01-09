@@ -8,6 +8,8 @@ export default {
   semi: false,
   tabWidth: 2,
   useTabs: false,
+  singleQuote: false,
+  jsxSingleQuote: false,
   importOrder: [
     "^@/",
     "^[a-z]",
