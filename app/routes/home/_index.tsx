@@ -144,9 +144,9 @@ export default function Home() {
               </h2>
               <p className="text-lg text-muted-foreground">
                 <Wordmark variant="full" /> is led by Myles Carrick, an
-                experienced ed tech leader and current CIO at Knox Grammar
-                School. With extensive experience in educational technology, we
-                understand the unique challenges schools face.
+                experienced ed tech leader and CIO at Knox Grammar School. With
+                extensive experience in educational technology, we understand
+                the unique challenges schools face.
               </p>
               <div className="">
                 <Button variant="secondary" asChild>
@@ -156,13 +156,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <div className="relative h-[400px] w-full overflow-hidden rounded-xl bg-gradient-to-br from-primary/10 to-secondary/30">
-                <img
-                  src="https://placehold.co/600x400"
-                  alt="Placeholder"
-                  className="object-cover mix-blend-overlay"
-                  width={600}
-                  height={400}
-                />
+                <img src="/images/myles-carrick-profile-pic.jpg" />
               </div>
             </div>
           </div>
