@@ -33,4 +33,4 @@ jobs:
       - uses: superfly/flyctl-actions/setup-flyctl@master
 
       - run: bun install
-      - run: bun run scripts/deploy/set-remote-secrets.ts
+      - run: bun run scripts/set-remote-secrets.ts
