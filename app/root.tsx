@@ -23,6 +23,12 @@ export const links: Route.LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ]
 
+export const loader = async ({ context }: Route.LoaderArgs) => {
+  return {
+    ...context,
+  }
+}
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

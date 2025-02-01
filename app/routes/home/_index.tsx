@@ -5,7 +5,7 @@ import {
   UsersIcon,
 } from "lucide-react"
 import { Link } from "react-router"
-import type { Route } from "../+types/home"
+import type { Route } from "./+types/_index"
 import { HomeSection } from "~/components/layout/home-section"
 import { Wordmark } from "~/components/layout/wordmark"
 import { Button } from "~/components/ui/button"
@@ -46,8 +46,12 @@ const services = [
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Outlearn" },
-    { name: "description", content: "Outlearn Education" },
+    { title: "Outlearn Education // Myles Carrick // Australia" },
+    {
+      name: "description",
+      content:
+        "Outlearn Education is a leading provider of expert ed tech strategy and guidance",
+    },
   ]
 }
 
@@ -70,9 +74,9 @@ export default function Home() {
               <Button size="lg" asChild>
                 <Link to="/contact">Reach out for a chat</Link>
               </Button>
-              <Button size="lg" variant="secondary" asChild>
+              {/* <Button size="lg" variant="secondary" asChild>
                 <Link to="/services">Learn more</Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

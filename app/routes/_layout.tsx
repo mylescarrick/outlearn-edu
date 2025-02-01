@@ -6,19 +6,11 @@ import {
   UsersIcon,
 } from "lucide-react"
 import { Link, Outlet } from "react-router"
-import type { Route } from "./+types/home"
+import type { Route } from "./+types/_layout"
 import BackgroundLetter from "~/components/layout/background-letter"
-import { HomeSection } from "~/components/layout/home-section"
 import { O } from "~/components/layout/o"
 import { Wordmark } from "~/components/layout/wordmark"
 import { Button } from "~/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "~/components/ui/card"
 
 const services = [
   {
@@ -76,24 +68,24 @@ export default function Home() {
               <Wordmark variant="dot" />
             </Link>
             <nav className="flex items-center justify-end gap-6">
-              <Link
+              {/* <Link
                 to="/services"
                 className="py-5 text-sm font-medium hover:text-primary"
               >
                 Services
-              </Link>
+              </Link> */}
               <Link
                 to="/about"
                 className="py-5 text-sm font-medium hover:text-primary"
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 to="/ideas"
                 className="py-5 text-sm font-medium hover:text-primary"
               >
                 Ideas
-              </Link>
+              </Link> */}
               <Button variant="secondary" asChild className="py-8">
                 <Link to="/contact">Get in touch</Link>
               </Button>
