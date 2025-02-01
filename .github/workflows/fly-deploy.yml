@@ -10,7 +10,7 @@ env:
   FLY_PROJECT_NAME: outlearn-edu
   OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
   ENV_FILE_PATH: .env.prod
-  FLY_API_TOKEN: ${{ secrets.FLY_API_ORG_TOKEN }}
+  FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
 jobs:
   build-and-deploy:
