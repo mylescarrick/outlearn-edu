@@ -35,15 +35,15 @@ export const action = async ({ request }: Route.ActionArgs) => {
     })
   }
 
-  // const nodemailer = createProductionClient()
-  const emailTransport = await sendReactEmail(
+  await sendReactEmail(
     <ThankyouEmail
       recipientName={submission.value.name || "there"}
-      message="Thanks for getting in touch"
-    ></ThankyouEmail>,
+      comment={submission.value.comment}
+    />,
     {
-      sender: "myles@outlearn.education",
+      sender: "Myles Carrick // Outlearn Education <myles@outlearn.education>",
       to: [submission.value.email],
+      bcc: ["Myles Carrick <myles@outlearn.education>"],
       subject: "Outlearn :: thanks for getting in touch",
     }
   )
