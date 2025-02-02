@@ -30,33 +30,20 @@ export const EmailLayout = ({
     <Html lang="en" dir="ltr">
       <Head>
         <title>{previewMessage}</title>
+        {/* Roboto */}
+        <link
+          href="https://fonts.gstatic.com/s/roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2"
+          rel="stylesheet"
+          type="font/woff2"
+        />
+        {/* Roboto Serif */}
+        <link
+          href="https://fonts.gstatic.com/s/robotoserif/v15/R70kjywflP6FLr3gZx7K8UyEVQnyR1E7VN-f51xYuGCQepO9CRLLcmv0wAqC0Q4MVaR-qf2CgAehahh23Obv-KoE.woff2"
+          rel="stylesheet"
+          type="font/woff2"
+        />
       </Head>
       <Preview>{previewMessage}</Preview>
-
-      {/* Primary font - Roboto */}
-      <Font
-        fontFamily="Roboto"
-        fallbackFontFamily="Arial"
-        webFont={{
-          url: "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap",
-          format: "woff2",
-        }}
-        fontWeight={400}
-        fontStyle="normal"
-      />
-
-      {/* Brand font - Roboto Serif */}
-      <Font
-        fontFamily="Roboto Serif"
-        fallbackFontFamily="Georgia"
-        webFont={{
-          url: "https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,800&display=swap",
-          format: "woff2",
-        }}
-        fontWeight={800}
-        fontStyle="italic"
-      />
-
       <Tailwind
         config={{
           theme: {
@@ -81,7 +68,7 @@ export const EmailLayout = ({
               },
               fontFamily: {
                 sans: ["Roboto", ...defaultTheme.fontFamily.sans],
-                serif: defaultTheme.fontFamily.sans, // override
+                serif: ["Roboto", ...defaultTheme.fontFamily.sans],
                 brand: ["Roboto Serif", ...defaultTheme.fontFamily.serif],
               },
             },
@@ -112,13 +99,13 @@ export const EmailLayout = ({
 
           {/* Footer */}
           <Section className="mt-12 border-t border-border pt-8">
-            <Text className="font-sans text-sm text-muted-foreground">
+            <Text className="font-sans text-xs text-muted-foreground">
               This email was sent by{" "}
               <a
                 href={baseUrl}
                 className="text-primary transition-colors hover:text-primary/80"
               >
-                Outlearn Education
+                Outlearn Education.
               </a>
             </Text>
           </Section>
