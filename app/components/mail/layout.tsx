@@ -87,9 +87,7 @@ export const EmailLayout = ({
                   className="max-w-[200px]"
                 />
               ) : (
-                <p className="inline-flex items-center gap-1 font-brand font-bold italic text-primary">
-                  Outlearn…
-                </p>
+                <Wordmark variant="dot" />
               )}
             </a>
           </Section>
